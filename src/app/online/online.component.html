@@ -1,0 +1,20 @@
+<div class="row" style="margin-top: 10px;">
+	<div class="col-12">
+		<a [routerLink]="['/']" class="btn btn-primary float-right">To Home</a>
+	</div>
+</div>
+<div class="row">
+	<div class="col-12">
+		<form (ngSubmit) = "submit()" #wsForm="ngForm" name="wsForm">
+			<div class="form-group">
+			<label for="email">Hi, Please Select:</label>
+				<input type="text" class="form-control" value="Online Business" disabled>
+			</div>
+			<div class="form-group">
+				<label for="pwd">Insert Website:</label>
+				<input type="text" placeholder="Type your website here" [(ngModel)]="website" class="form-control b-0" name="website" required>
+			</div>
+			<button class="btn btn-primary float-right" (click)="submit()" [disabled]="!wsForm.form.valid">Submit</button>	
+		</form>
+	</div>
+</div>

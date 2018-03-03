@@ -1,0 +1,10 @@
+.nav-pills .nav-link:hover{
+    color: #fff;
+    background-color: #007bff;
+}
+.nav-item a{
+	font-size: 1.5rem;
+}
+.title{
+	font-size: 1.5rem
+}

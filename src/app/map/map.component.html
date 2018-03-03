@@ -1,0 +1,23 @@
+<div class="row">
+	<div class="col-md-12">
+		<mgl-map
+		    [style]="'mapbox://styles/mapbox/streets-v9'"
+		    [zoom]="[8]"
+		    [center]="[result.x, result.y]"
+		    *ngIf="visible"
+		>
+			<mgl-marker
+			    [lngLat]="[result.x, result.y]"
+			   	>
+			    <img src="https://static.tonicdev.com/assets/vendor/leaflet/images/marker-icon.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" tabindex="0">
+			</mgl-marker>
+
+		</mgl-map>
+	</div>
+</div>
+<div class="row" *ngIf="visible">
+	<div class="col-md-12 text-center">
+		<button class="btn btn-primary" (click)="toWatson()">Yes</button>
+		<button class="btn btn-secondary" (click)="clear()">No</button>
+	</div>
+</div>

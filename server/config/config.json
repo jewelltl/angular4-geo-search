@@ -1,0 +1,42 @@
+{
+    "application" : "Realtime location search",
+    "port": 8000,
+    "env": "development",
+    "instance": "Server_PC",
+    "parallelProcessing": 5,
+    "domain": "http://localhost:8000",
+    "websocketsRestartCronTime": "0 */5 * * * *",
+
+    "db": {
+        "connection": "mongodb://localhost:27017/geo_location_dev",
+        "options": {
+        }
+    },
+    "utilityProvidersGeneralWords": [
+        "company",
+        "inc",
+        "and",
+        "."
+    ],
+    "cookie": {
+        "secure": false
+    },
+    "session": {
+        "key": "mySuperPuperKey",
+        "cookieDomain": ".example.com"
+    },
+    "assets": {
+        "imageAssetsKeyPrefix": "Images",
+        "userAssetsKeyPrefix": "UserAssets"
+    },
+    "api": {
+        "version": "v1",
+        "secure": true
+    },
+    "watson": {
+        "username": "736498d9-a0f2-416f-82df-33395e76d79f",
+        "password": "5NxeLZDKxbXd",
+        "workspace_id": "771a6ab5-9e9c-4776-9d21-e056980d7be3"
+
+    }
+}

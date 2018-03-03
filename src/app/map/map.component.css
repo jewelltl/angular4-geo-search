@@ -1,0 +1,16 @@
+
+mgl-map{
+	left: 30px;
+	right: 30px;
+	top: 150px;
+	bottom: 15px;
+	height: 75vh;
+	margin-bottom: 25px;
+}
+
+mgl-marker img{
+	width: 25px;
+	height: 41px;
+	z-index: 215;
+	outline: none;
+}

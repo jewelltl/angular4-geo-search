@@ -1,0 +1,21 @@
+<div class="form-group">
+	<ng-template #rt let-r="result" let-t="term">
+	  {{ r.text}}
+	</ng-template>
+  	
+  	<input 
+  		id="typeahead-http"
+  		type="text"
+  		class="form-control"
+  		[class.is-invalid]="searchFailed"
+  		[(ngModel)]="model"
+  		[ngbTypeahead]="search"
+  		[resultTemplate]="rt"
+  		[inputFormatter]="formatter"
+  		(selectItem)="getDetail($event)"
+  		placeholder="Type here..." 
+		/>
+  <span *ngIf="searching">searching...</span>
+  <div class="invalid-feedback" *ngIf="searchFailed">Sorry, suggestions could not be loaded.</div>
+</div>
+
